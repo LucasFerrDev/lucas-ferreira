@@ -1,6 +1,8 @@
 import { ExternalLink } from 'lucide-react';
 import { FaGithub as Github } from 'react-icons/fa';
 import './Projects.css';
+import nexusSpecImg from '../assets/nexus-spec.png';
+import psicologaImg from '../assets/psicologa-beatriz.png';
 
 export default function Projects() {
   const handleMouseMove = (e) => {
@@ -28,21 +30,21 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'DevSpace Dashboard',
-      description: 'Um dashboard moderno e analítico para desenvolvedores acompanharem métricas de produtividade, commits e integrações.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600',
-      techs: ['React', 'TypeScript', 'Chart.js'],
-      github: '#',
-      live: '#'
+      title: 'Nexus Spec',
+      description: 'NexusSpec é uma ferramenta baseada em SDD, que adiciona uma camada de especificação em seu projeto para auxiliar agentes de IA a construírem softwares de acordo com o que você definiu no processo.',
+      image: nexusSpecImg,
+      techs: ['Python'],
+      github: 'https://github.com/LucasFerrDev/NexusSpec',
+      live: 'https://github.com/LucasFerrDev/NexusSpec'
     },
     {
       id: 2,
-      title: 'E-commerce UI Kit',
-      description: 'Uma biblioteca completa de componentes de UI focada em e-commerces, com carrinho de compras, checkout e filtros.',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600',
-      techs: ['Next.js', 'Tailwind', 'Stripe'],
-      github: '#',
-      live: '#'
+      title: 'Psicóloga Beatriz',
+      description: 'Landing page desenvolvida para uma psicóloga com foco em captação de novos pacientes.',
+      image: psicologaImg,
+      techs: ['HTML', 'CSS', 'TypeScript', 'React', 'Vue'],
+      github: 'https://github.com/LucasFerrDev/psicologa-beatriz',
+      live: 'https://psicologa-beatriz.vercel.app/'
     },
     {
       id: 3,

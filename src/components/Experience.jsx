@@ -13,27 +13,19 @@ export default function Experience() {
   const experiences = [
     {
       id: 1,
-      role: 'Desenvolvedor Frontend Sênior',
-      company: 'Tech Solutions Inc.',
-      period: '2024 - Presente',
-      description: 'Liderando o desenvolvimento de interfaces complexas e arquitetura de aplicações web usando React e Next.js.',
-      techs: ['React', 'TypeScript', 'Tailwind', 'Zustand']
+      role: 'Desenvolvedor Frontend Júnior',
+      company: 'Funnel Max',
+      period: '2026 - Presente',
+      description: 'Atuo como desenvolvedor com foco em front-end, responsável pela criação, manutenção e publicação de páginas web utilizadas em campanhas de marketing digital, garantindo performance, estabilidade e integração com ferramentas externas.',
+      techs: ['HTML', 'CSS', 'JavaScript', 'React', 'Vue', 'n8n']
     },
     {
       id: 2,
-      role: 'Desenvolvedor Pleno',
-      company: 'Digital Agency X',
-      period: '2022 - 2024',
-      description: 'Desenvolvimento de e-commerces e landing pages de alta performance, melhorando as métricas de conversão em 40%.',
-      techs: ['Vue.js', 'Nuxt', 'Sass', 'Figma']
-    },
-    {
-      id: 3,
-      role: 'Desenvolvedor Júnior',
-      company: 'Startup Y',
-      period: '2020 - 2022',
-      description: 'Manutenção de sistemas legados e migração progressiva para novas tecnologias web.',
-      techs: ['JavaScript', 'HTML5/CSS3', 'Bootstrap']
+      role: 'Estagiário de Desenvolvimento',
+      company: 'Funnel Max',
+      period: '2024 - 2026',
+      description: 'Atuação na manutenção e publicação de páginas web, garantindo atualizações, correções e melhorias contínuas. Responsável pela configuração e acompanhamento de automações, além de prestar suporte técnico relacionado a hospedagens e ambientes de produção.',
+      techs: ['HTML', 'CSS', 'JavaScript', 'WordPress']
     }
   ];
 

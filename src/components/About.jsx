@@ -1,4 +1,4 @@
-import { Code2, MonitorPlay, Layers } from 'lucide-react';
+import { Code2, Server, Database } from 'lucide-react';
 import './About.css';
 
 export default function About() {
@@ -17,29 +17,36 @@ export default function About() {
         
         <div className="about-grid">
           <div className="about-text">
+            <p>Olá pessoal!</p>
             <p>
-              Sou um desenvolvedor apaixonado por tecnologia, com foco em criar interfaces de usuário incríveis e aplicações escaláveis. Minha jornada na programação começou com a curiosidade de entender como as coisas funcionam por trás das telas.
+              Sou um desenvolvedor apaixonado por tecnologia e por criar soluções que fazem a diferença. Ao longo da minha trajetória, venho desenvolvendo diversos projetos com diferentes tecnologias, o que me permitiu construir uma visão ampla sobre desenvolvimento e resolução de problemas.
             </p>
             <p>
-              Atualmente, especializo-me no ecossistema moderno do desenvolvimento web, combinando design principles com código limpo e eficiente. Acredito que a tecnologia deve resolver problemas de forma simples e elegante.
+              Atualmente, estou direcionando meu foco para o desenvolvimento front-end, buscando me especializar cada vez mais na criação de interfaces modernas, intuitivas e bem estruturadas.
+            </p>
+            <p>
+              Além disso, tenho cada vez mais inserido inteligência artificial e suas aplicações práticas no meu trabalho, principalmente no uso para automação e otimização de processos. É uma área que me motiva bastante e que venho explorando com entusiasmo.
+            </p>
+            <p>
+              Sou movido por desafios, aprendizado contínuo e pela vontade de construir soluções que realmente façam a diferença.
             </p>
           </div>
           
           <div className="skills-container">
             <div className="skill-card" onMouseMove={handleMouseMove}>
               <Code2 size={32} className="text-accent mb-4" />
-              <h3>Frontend Moderno</h3>
-              <p>React, Vite, Next.js, TypeScript e CSS/Tailwind.</p>
+              <h3>Frontend</h3>
+              <p>HTML, CSS, Javascript, React, Angular, Next.js</p>
             </div>
             <div className="skill-card" onMouseMove={handleMouseMove}>
-              <MonitorPlay size={32} className="text-accent mb-4" />
-              <h3>UI/UX Design</h3>
-              <p>Interfaces focadas na experiência do usuário, acessibilidade e performance.</p>
+              <Server size={32} className="text-accent mb-4" />
+              <h3>Backend</h3>
+              <p>Node.js, Typescript, Java, Spring, Ruby on Rails.</p>
             </div>
             <div className="skill-card" onMouseMove={handleMouseMove}>
-              <Layers size={32} className="text-accent mb-4" />
-              <h3>Arquitetura</h3>
-              <p>Código limpo, componentes reutilizáveis e design systems escaláveis.</p>
+              <Database size={32} className="text-accent mb-4" />
+              <h3>Infraestrutura</h3>
+              <p>Postgresql, MongoDB, Git e Github, CI/CD, Linux, Docker.</p>
             </div>
           </div>
         </div>

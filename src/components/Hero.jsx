@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Terminal, ArrowRight } from 'lucide-react';
+import perfilImg from '../assets/perfil.png';
 import './Hero.css';
 
 export default function Hero() {
   const [charIndex, setCharIndex] = useState(0);
-  const fullText = "A stellar web experience";
+  const fullText = "Web developer";
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -53,26 +54,8 @@ export default function Hero() {
         </div>
         
         <div className="hero-graphic animate-fade-in delay-300">
-          <div className="react-planet-container">
-            <div className="react-core"></div>
-            
-            <div className="react-ring ring-1">
-              <div className="electron-container c-1">
-                <div className="react-electron"></div>
-              </div>
-            </div>
-            
-            <div className="react-ring ring-2">
-              <div className="electron-container c-2">
-                <div className="react-electron"></div>
-              </div>
-            </div>
-            
-            <div className="react-ring ring-3">
-              <div className="electron-container c-3">
-                <div className="react-electron"></div>
-              </div>
-            </div>
+          <div className="profile-image-container">
+            <img src={perfilImg} alt="Lucas Ferreira" className="profile-image" />
           </div>
         </div>
       </div>

@@ -1,20 +1,16 @@
-import { Mail, Send } from 'lucide-react';
+import { Mail, Send, CheckCircle } from 'lucide-react';
 import { FaGithub as Github, FaLinkedin as Linkedin } from 'react-icons/fa';
+import { useForm, ValidationError } from '@formspree/react';
 import './Contact.css';
 
 export default function Contact() {
+  const [state, handleSubmit] = useForm('xqenaddw');
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
     e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Logic for form submission would go here
-    alert('Mensagem enviada com sucesso!');
   };
 
   return (
@@ -30,47 +26,60 @@ export default function Contact() {
             </p>
             
             <div className="social-links">
-              <a href="mailto:seu-email@gmail.com" className="social-item">
+              <a href="mailto:lucasferreira1.dev@gmail.com" className="social-item">
                 <div className="social-icon">
                   <Mail size={24} />
                 </div>
-                <span>seu-email@gmail.com</span>
+                <span>lucasferreira1.dev@gmail.com</span>
               </a>
-              <a href="https://github.com/seu-usuario" target="_blank" rel="noreferrer" className="social-item">
+              <a href="https://github.com/LucasFerrDev" target="_blank" rel="noreferrer" className="social-item">
                 <div className="social-icon">
                   <Github size={24} />
                 </div>
-                <span>github.com/seu-usuario</span>
+                <span>github.com/LucasFerrDev</span>
               </a>
-              <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noreferrer" className="social-item">
+              <a href="https://www.linkedin.com/in/lucasf-souza/" target="_blank" rel="noreferrer" className="social-item">
                 <div className="social-icon">
                   <Linkedin size={24} />
                 </div>
-                <span>linkedin.com/in/seu-usuario</span>
+                <span>linkedin.com/in/lucasf-souza</span>
               </a>
             </div>
           </div>
           
           <form className="contact-form" onSubmit={handleSubmit} onMouseMove={handleMouseMove}>
-            <div className="form-group">
-              <label htmlFor="name">Nome</label>
-              <input type="text" id="name" placeholder="Seu nome completo" required />
-            </div>
-            
-            <div className="form-group">
-              <label htmlFor="email">E-mail</label>
-              <input type="email" id="email" placeholder="seu@email.com" required />
-            </div>
-            
-            <div className="form-group">
-              <label htmlFor="message">Mensagem</label>
-              <textarea id="message" rows="5" placeholder="Como posso ajudar?" required></textarea>
-            </div>
-            
-            <button type="submit" className="btn-primary w-full">
-              Enviar Mensagem
-              <Send size={18} />
-            </button>
+            {state.succeeded ? (
+              <div className="success-message">
+                <CheckCircle size={48} color="var(--accent)" />
+                <h3>Mensagem Enviada!</h3>
+                <p>Obrigado pelo contato. Retornarei o mais breve possível.</p>
+              </div>
+            ) : (
+              <>
+                <div className="form-group">
+                  <label htmlFor="name">Nome</label>
+                  <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+                  <ValidationError prefix="Name" field="name" errors={state.errors} />
+                </div>
+                
+                <div className="form-group">
+                  <label htmlFor="email">E-mail</label>
+                  <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+                  <ValidationError prefix="Email" field="email" errors={state.errors} />
+                </div>
+                
+                <div className="form-group">
+                  <label htmlFor="message">Mensagem</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Como posso ajudar?" required></textarea>
+                  <ValidationError prefix="Message" field="message" errors={state.errors} />
+                </div>
+                
+                <button type="submit" className="btn-primary w-full" disabled={state.submitting}>
+                  {state.submitting ? 'Enviando...' : 'Enviar Mensagem'}
+                  {!state.submitting && <Send size={18} />}
+                </button>
+              </>
+            )}
           </form>
         </div>
       </div>
