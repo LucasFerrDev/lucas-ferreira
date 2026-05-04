@@ -13,22 +13,22 @@ export default function About() {
   return (
     <section className="section bg-secondary" id="about">
       <div className="container">
-        <h2 className="section-title">Sobre <span>Mim</span></h2>
+        <h2 className="section-title">About <span>Me</span></h2>
         
         <div className="about-grid">
           <div className="about-text">
-            <p>Olá pessoal!</p>
+            <p>Hi everyone!</p>
             <p>
-              Sou um desenvolvedor apaixonado por tecnologia e por criar soluções que fazem a diferença. Ao longo da minha trajetória, venho desenvolvendo diversos projetos com diferentes tecnologias, o que me permitiu construir uma visão ampla sobre desenvolvimento e resolução de problemas.
+              I am a developer passionate about technology and creating solutions that make a difference. Throughout my journey, I have been developing several projects with different technologies, which has allowed me to build a broad vision of development and problem-solving.
             </p>
             <p>
-              Atualmente, estou direcionando meu foco para o desenvolvimento front-end, buscando me especializar cada vez mais na criação de interfaces modernas, intuitivas e bem estruturadas.
+              Currently, I am focusing on front-end development, seeking to specialize more and more in creating modern, intuitive, and well-structured interfaces.
             </p>
             <p>
-              Além disso, tenho cada vez mais inserido inteligência artificial e suas aplicações práticas no meu trabalho, principalmente no uso para automação e otimização de processos. É uma área que me motiva bastante e que venho explorando com entusiasmo.
+              Additionally, I am increasingly incorporating artificial intelligence and its practical applications into my work, mainly using it for automation and process optimization. It is an area that motivates me greatly and that I have been exploring with enthusiasm.
             </p>
             <p>
-              Sou movido por desafios, aprendizado contínuo e pela vontade de construir soluções que realmente façam a diferença.
+              I am driven by challenges, continuous learning, and the desire to build solutions that truly make a difference.
             </p>
           </div>
           
@@ -36,7 +36,7 @@ export default function About() {
             <div className="skill-card" onMouseMove={handleMouseMove}>
               <Code2 size={32} className="text-accent mb-4" />
               <h3>Frontend</h3>
-              <p>HTML, CSS, Javascript, React, Angular, Next.js</p>
+              <p>HTML, CSS, JavaScript, React, Angular</p>
             </div>
             <div className="skill-card" onMouseMove={handleMouseMove}>
               <Server size={32} className="text-accent mb-4" />
@@ -45,7 +45,7 @@ export default function About() {
             </div>
             <div className="skill-card" onMouseMove={handleMouseMove}>
               <Database size={32} className="text-accent mb-4" />
-              <h3>Infraestrutura</h3>
+              <h3>Infrastructure</h3>
               <p>Postgresql, MongoDB, Git e Github, CI/CD, Linux, Docker.</p>
             </div>
           </div>

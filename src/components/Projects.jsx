@@ -1,8 +1,10 @@
-import { ExternalLink } from 'lucide-react';
+
 import { FaGithub as Github } from 'react-icons/fa';
 import './Projects.css';
 import nexusSpecImg from '../assets/nexus-spec.png';
 import psicologaImg from '../assets/psicologa-beatriz.png';
+import dashImg from '../assets/dash.png';
+
 
 export default function Projects() {
   const handleMouseMove = (e) => {
@@ -31,7 +33,7 @@ export default function Projects() {
     {
       id: 1,
       title: 'Nexus Spec',
-      description: 'NexusSpec é uma ferramenta baseada em SDD, que adiciona uma camada de especificação em seu projeto para auxiliar agentes de IA a construírem softwares de acordo com o que você definiu no processo.',
+      description: 'NexusSpec is an SDD-based tool that adds a specification layer to your project to help AI agents build software according to what you defined in the process.',
       image: nexusSpecImg,
       techs: ['Python'],
       github: 'https://github.com/LucasFerrDev/NexusSpec',
@@ -39,8 +41,8 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: 'Psicóloga Beatriz',
-      description: 'Landing page desenvolvida para uma psicóloga com foco em captação de novos pacientes.',
+      title: 'Psychologist Beatriz',
+      description: 'Landing page developed for a psychologist with a focus on acquiring new patients.',
       image: psicologaImg,
       techs: ['HTML', 'CSS', 'TypeScript', 'React', 'Vue'],
       github: 'https://github.com/LucasFerrDev/psicologa-beatriz',
@@ -48,19 +50,19 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: 'TaskFlow Manager',
-      description: 'Aplicativo de gerenciamento de tarefas com suporte a drag and drop, quadros kanban e colaboração em tempo real.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&q=80&w=600',
-      techs: ['Vue', 'Firebase', 'Sass'],
-      github: '#',
-      live: '#'
+      title: 'Wallert Tracker',
+      description: 'Wallert Tracker is a personal finance application for managing income, expenses, and goals, featuring user authentication and a dashboard with a consolidated data view.',
+      image: dashImg,
+      techs: ['React', 'TypeScript', 'Vite', 'Java', 'Spring', 'Maven', 'PostgreSQL'],
+      github: 'https://github.com/LucasFerrDev/wallert-tracker',
+      live: 'https://github.com/LucasFerrDev/wallert-tracker'
     }
   ];
 
   return (
     <section className="section bg-secondary" id="projects">
       <div className="container">
-        <h2 className="section-title">Meus <span>Projetos</span></h2>
+        <h2 className="section-title">My <span>Projects</span></h2>
         
         <div className="projects-grid">
           {projects.map((project) => (
@@ -68,12 +70,10 @@ export default function Projects() {
               <div className="project-image">
                 <img src={project.image} alt={project.title} />
                 <div className="project-overlay">
-                  <a href={project.github} target="_blank" rel="noreferrer" aria-label="Ver código no GitHub">
+                  <a href={project.github} target="_blank" rel="noreferrer" aria-label="View code on GitHub">
                     <Github size={24} />
                   </a>
-                  <a href={project.live} target="_blank" rel="noreferrer" aria-label="Ver projeto online">
-                    <ExternalLink size={24} />
-                  </a>
+
                 </div>
               </div>
               <div className="project-content">

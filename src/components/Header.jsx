@@ -42,7 +42,7 @@ export default function Header() {
             <button 
               onClick={toggleTheme} 
               className="theme-toggle"
-              aria-label="Alternar tema"
+              aria-label="Toggle theme"
             >
               {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
             </button>

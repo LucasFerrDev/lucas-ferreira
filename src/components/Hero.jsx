@@ -37,18 +37,18 @@ export default function Hero() {
             <span className="cursor-block"></span>
           </p>
           <p className="hero-description animate-fade-in delay-300">
-            Construindo aplicações modernas, performáticas e acessíveis com foco em um código limpo e arquitetura escalável.
+            Building modern, performant, and accessible applications with a focus on clean code and scalable architecture.
           </p>
           
           <div className="hero-actions animate-fade-in delay-300">
             <a href="#projects" className="btn-primary">
-              Projetos
+              Projects
             </a>
             <a href="#about" className="btn-secondary">
-              Sobre Mim
+              About Me
             </a>
             <a href="#contact" className="btn-transparent">
-              Contato
+              Contact
             </a>
           </div>
         </div>

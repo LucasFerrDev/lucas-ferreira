@@ -16,13 +16,13 @@ export default function Contact() {
   return (
     <section className="section stars-bg" id="contact">
       <div className="container">
-        <h2 className="section-title">Entre em <span>Contato</span></h2>
+        <h2 className="section-title">Get in <span>Touch</span></h2>
         
         <div className="contact-grid">
           <div className="contact-info">
-            <h3>Vamos conversar?</h3>
+            <h3>Let's talk?</h3>
             <p className="contact-desc">
-              Estou sempre aberto a novas oportunidades, colaborações em projetos open source e bate-papos sobre tecnologia.
+              I am always open to new opportunities, collaborations on open source projects, and chats about technology.
             </p>
             
             <div className="social-links">
@@ -51,31 +51,31 @@ export default function Contact() {
             {state.succeeded ? (
               <div className="success-message">
                 <CheckCircle size={48} color="var(--accent)" />
-                <h3>Mensagem Enviada!</h3>
-                <p>Obrigado pelo contato. Retornarei o mais breve possível.</p>
+                <h3>Message Sent!</h3>
+                <p>Thank you for reaching out. I will get back to you as soon as possible.</p>
               </div>
             ) : (
               <>
                 <div className="form-group">
-                  <label htmlFor="name">Nome</label>
-                  <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+                  <label htmlFor="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your full name" required />
                   <ValidationError prefix="Name" field="name" errors={state.errors} />
                 </div>
                 
                 <div className="form-group">
-                  <label htmlFor="email">E-mail</label>
-                  <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+                  <label htmlFor="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="your@email.com" required />
                   <ValidationError prefix="Email" field="email" errors={state.errors} />
                 </div>
                 
                 <div className="form-group">
-                  <label htmlFor="message">Mensagem</label>
-                  <textarea id="message" name="message" rows="5" placeholder="Como posso ajudar?" required></textarea>
+                  <label htmlFor="message">Message</label>
+                  <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
                   <ValidationError prefix="Message" field="message" errors={state.errors} />
                 </div>
                 
                 <button type="submit" className="btn-primary w-full" disabled={state.submitting}>
-                  {state.submitting ? 'Enviando...' : 'Enviar Mensagem'}
+                  {state.submitting ? 'Sending...' : 'Send Message'}
                   {!state.submitting && <Send size={18} />}
                 </button>
               </>

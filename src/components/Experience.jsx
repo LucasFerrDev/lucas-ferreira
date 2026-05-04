@@ -13,18 +13,18 @@ export default function Experience() {
   const experiences = [
     {
       id: 1,
-      role: 'Desenvolvedor Frontend Júnior',
+      role: 'Junior Frontend Developer',
       company: 'Funnel Max',
-      period: '2026 - Presente',
-      description: 'Atuo como desenvolvedor com foco em front-end, responsável pela criação, manutenção e publicação de páginas web utilizadas em campanhas de marketing digital, garantindo performance, estabilidade e integração com ferramentas externas.',
+      period: '2026 - Present',
+      description: 'I work as a front-end developer responsible for creating, maintaining, and publishing web pages used in digital marketing campaigns, ensuring performance, stability, and integration with external tools.',
       techs: ['HTML', 'CSS', 'JavaScript', 'React', 'Vue', 'n8n']
     },
     {
       id: 2,
-      role: 'Estagiário de Desenvolvimento',
+      role: 'Development Intern',
       company: 'Funnel Max',
       period: '2024 - 2026',
-      description: 'Atuação na manutenção e publicação de páginas web, garantindo atualizações, correções e melhorias contínuas. Responsável pela configuração e acompanhamento de automações, além de prestar suporte técnico relacionado a hospedagens e ambientes de produção.',
+      description: 'Worked on the maintenance and publication of web pages, ensuring continuous updates, fixes, and improvements. Responsible for configuring and monitoring automations, in addition to providing technical support related to hosting and production environments.',
       techs: ['HTML', 'CSS', 'JavaScript', 'WordPress']
     }
   ];
@@ -32,7 +32,7 @@ export default function Experience() {
   return (
     <section className="section stars-bg" id="experience">
       <div className="container">
-        <h2 className="section-title">Experiência <span>Profissional</span></h2>
+        <h2 className="section-title">Work <span>Experience</span></h2>
         
         <div className="timeline">
           {experiences.map((exp) => (
