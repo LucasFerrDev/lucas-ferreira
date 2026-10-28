@@ -13,15 +13,15 @@ export default function Experience() {
   const experiences = [
     {
       id: 1,
-      role: 'Junior Frontend Developer',
+      role: 'IT Analyst Assistant',
       company: 'Funnel Max',
       period: '2026 - Present',
-      description: 'I work as a front-end developer responsible for creating, maintaining, and publishing web pages used in digital marketing campaigns, ensuring performance, stability, and integration with external tools.',
-      techs: ['HTML', 'CSS', 'JavaScript', 'React', 'Vue', 'n8n']
+      description: 'I work across web development and digital marketing technology, creating and maintaining landing pages and sales pages, configuring tracking scripts, integrating checkout platforms, and building automations to improve lead management and marketing operations.',
+      techs: ['HTML', 'CSS', 'JavaScript', 'React', 'Vue.js', 'n8n', 'APIs', 'Webhooks']
     },
     {
       id: 2,
-      role: 'Development Intern',
+      role: 'Intern',
       company: 'Funnel Max',
       period: '2024 - 2026',
       description: 'Worked on the maintenance and publication of web pages, ensuring continuous updates, fixes, and improvements. Responsible for configuring and monitoring automations, in addition to providing technical support related to hosting and production environments.',
